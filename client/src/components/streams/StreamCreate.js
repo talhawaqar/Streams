@@ -27,7 +27,6 @@ class StreamCreate extends React.Component {
   }
 
   onSubmit = (formValues) => {
-    console.log(formValues);
     this.props.createStream(formValues);
   }
 
@@ -56,7 +55,6 @@ const validate = (formValues) => {
     errors.title = 'Title is empty';
   }
   if (!formValues.description) {
-    console.log('asdd');
     errors.description = 'Description is empty';
   }
   return errors;
